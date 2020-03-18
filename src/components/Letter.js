@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
 class Letter extends Component {
+    selectLetter = () => {
+        this.props.selectLetter(this.props.letter)
+      }
+    
     render() {
-        let abc = []
-        for(let i = 0; i < 26; i++) {
-            abc.push(String.fromCharCode(65 + i))
-        }
-        return (<div>
-            {abc}
-        </div>)
+        
+    return <span onClick={this.selectLetter} className={this.props.status === undefined ? 'solution' : this.props.status ? 'clicked' : 'unclicked'}>{this.props.letter}</span>
     }
 }
 export default Letter

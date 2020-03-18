@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.clicked{
+  color: orangered;
+  text-decoration: line-through;
+}
+
+.unclicked{
+  font-weight: bold;
+}
+
+.solution{
+  color: blue;
+  font-weight: bold;
+}
+
+.highScore{
+  color: green;
+}
+.mediumScore{
+  color: orange;
+}
+.lowScore{
+  color: red;
+}
